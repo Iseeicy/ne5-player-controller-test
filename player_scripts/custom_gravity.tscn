@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://co1fo2e78qxa8"]
+
+[ext_resource type="Script" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/gravity.gd" id="1_188vv"]
+
+[node name="Gravity" type="Node"]
+script = ExtResource("1_188vv")
+gravity_force = 16.0

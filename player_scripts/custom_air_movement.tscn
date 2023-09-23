@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://nm6sggywxhcq"]
+
+[ext_resource type="Script" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/air_movement.gd" id="1_r4nbs"]
+
+[node name="AirMovement" type="Node"]
+script = ExtResource("1_r4nbs")
