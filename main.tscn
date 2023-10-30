@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://c0dhor5dsr3r4"]
 
-[ext_resource type="PackedScene" uid="uid://dsx4bnssnnb0j" path="res://maps/test_map/test_map.blend" id="1_nrqf3"]
+[ext_resource type="PackedScene" uid="uid://32dqkytq0p0y" path="res://maps/test_map/test_map.glb" id="1_07s1v"]
 [ext_resource type="PackedScene" uid="uid://b4nwduau6uxjr" path="res://addons/netengine5/net.bobbo.player-controller/player_controller.tscn" id="2_6vwec"]
 [ext_resource type="PackedScene" uid="uid://cf2idensb8y1s" path="res://ui/ui.tscn" id="3_q0e8w"]
 [ext_resource type="PackedScene" uid="uid://co1fo2e78qxa8" path="res://player_scripts/custom_gravity.tscn" id="3_rguik"]
@@ -18,7 +18,7 @@ ssao_enabled = true
 
 [node name="Main" type="Node3D"]
 
-[node name="test_map" parent="." instance=ExtResource("1_nrqf3")]
+[node name="test_map" parent="." instance=ExtResource("1_07s1v")]
 
 [node name="PlayerController" parent="." instance=ExtResource("2_6vwec")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
