@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c0dhor5dsr3r4"]
+[gd_scene load_steps=14 format=3 uid="uid://c0dhor5dsr3r4"]
 
 [ext_resource type="PackedScene" uid="uid://32dqkytq0p0y" path="res://maps/test_map/test_map.glb" id="1_07s1v"]
 [ext_resource type="PackedScene" uid="uid://b4nwduau6uxjr" path="res://addons/netengine5/net.bobbo.player-controller/player_controller.tscn" id="2_6vwec"]
@@ -8,6 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://nm6sggywxhcq" path="res://player_scripts/custom_air_movement.tscn" id="5_kg7lh"]
 [ext_resource type="PackedScene" uid="uid://dmk6liuk626xt" path="res://player_scripts/custom_crouch.tscn" id="6_s3j15"]
 [ext_resource type="PackedScene" uid="uid://c7g5jb4y6plna" path="res://player_scripts/custom_jump.tscn" id="7_bxive"]
+[ext_resource type="PackedScene" uid="uid://8g4l55gdq7tl" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/item_drop_default.tscn" id="8_nrq5y"]
+[ext_resource type="PackedScene" uid="uid://dan8wk0ijijys" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/item_pickup_default.tscn" id="9_nvx2q"]
+[ext_resource type="PackedScene" uid="uid://bfwsj3q80wj8q" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/item_selector_default.tscn" id="10_mrlyj"]
+[ext_resource type="PackedScene" uid="uid://40a8nwm87ybx" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/item_user_default.tscn" id="11_n06y6"]
 
 [sub_resource type="Environment" id="Environment_bfew5"]
 background_mode = 1
@@ -22,7 +26,7 @@ ssao_enabled = true
 
 [node name="PlayerController" parent="." instance=ExtResource("2_6vwec")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-player_scripts = Array[PackedScene]([ExtResource("3_rguik"), ExtResource("4_hhxny"), ExtResource("5_kg7lh"), ExtResource("6_s3j15"), ExtResource("7_bxive")])
+player_scripts = Array[PackedScene]([ExtResource("3_rguik"), ExtResource("4_hhxny"), ExtResource("5_kg7lh"), ExtResource("6_s3j15"), ExtResource("7_bxive"), ExtResource("8_nrq5y"), ExtResource("9_nvx2q"), ExtResource("10_mrlyj"), ExtResource("11_n06y6")])
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bfew5")
