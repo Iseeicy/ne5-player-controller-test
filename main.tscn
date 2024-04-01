@@ -1,12 +1,13 @@
-[gd_scene load_steps=14 format=3 uid="uid://c0dhor5dsr3r4"]
+[gd_scene load_steps=15 format=3 uid="uid://c0dhor5dsr3r4"]
 
-[ext_resource type="PackedScene" uid="uid://32dqkytq0p0y" path="res://maps/test_map/test_map.glb" id="1_07s1v"]
+[ext_resource type="PackedScene" uid="uid://da8f6n0h37ibo" path="res://maps/test_map/test_map.tscn" id="1_i86jl"]
 [ext_resource type="PackedScene" uid="uid://b4nwduau6uxjr" path="res://addons/netengine5/net.bobbo.player-controller/player_controller.tscn" id="2_6vwec"]
 [ext_resource type="PackedScene" uid="uid://cf2idensb8y1s" path="res://ui/ui.tscn" id="3_q0e8w"]
 [ext_resource type="PackedScene" uid="uid://co1fo2e78qxa8" path="res://player_scripts/custom_gravity.tscn" id="3_rguik"]
 [ext_resource type="PackedScene" uid="uid://d3ny2ijmpxdyk" path="res://player_scripts/custom_ground_movement.tscn" id="4_hhxny"]
 [ext_resource type="PackedScene" uid="uid://nm6sggywxhcq" path="res://player_scripts/custom_air_movement.tscn" id="5_kg7lh"]
 [ext_resource type="PackedScene" uid="uid://dmk6liuk626xt" path="res://player_scripts/custom_crouch.tscn" id="6_s3j15"]
+[ext_resource type="PackedScene" uid="uid://dnqijjhfxppc2" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/interactable_user_default.tscn" id="6_x3wam"]
 [ext_resource type="PackedScene" uid="uid://c7g5jb4y6plna" path="res://player_scripts/custom_jump.tscn" id="7_bxive"]
 [ext_resource type="PackedScene" uid="uid://8g4l55gdq7tl" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/item_drop_default.tscn" id="8_nrq5y"]
 [ext_resource type="PackedScene" uid="uid://dan8wk0ijijys" path="res://addons/netengine5/net.bobbo.player-controller/player_scripts/item_pickup_default.tscn" id="9_nvx2q"]
@@ -22,11 +23,11 @@ ssao_enabled = true
 
 [node name="Main" type="Node3D"]
 
-[node name="test_map" parent="." instance=ExtResource("1_07s1v")]
+[node name="test_map" parent="." instance=ExtResource("1_i86jl")]
 
 [node name="PlayerController" parent="." instance=ExtResource("2_6vwec")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-player_scripts = Array[PackedScene]([ExtResource("3_rguik"), ExtResource("4_hhxny"), ExtResource("5_kg7lh"), ExtResource("6_s3j15"), ExtResource("7_bxive"), ExtResource("8_nrq5y"), ExtResource("9_nvx2q"), ExtResource("10_mrlyj"), ExtResource("11_n06y6")])
+player_scripts = Array[PackedScene]([ExtResource("3_rguik"), ExtResource("4_hhxny"), ExtResource("5_kg7lh"), ExtResource("6_x3wam"), ExtResource("6_s3j15"), ExtResource("7_bxive"), ExtResource("8_nrq5y"), ExtResource("9_nvx2q"), ExtResource("10_mrlyj"), ExtResource("11_n06y6")])
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bfew5")
